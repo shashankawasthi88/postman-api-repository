@@ -7679,6 +7679,24 @@
 					"body": ""
 				}
 			]
+		},
+		{
+			"name": "get all integrations",
+			"id": "8fa4552d-6f44-4b1d-bd2a-84cf7fd20936",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "/integrations",
+					"path": [
+						"integrations"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"variable": [
