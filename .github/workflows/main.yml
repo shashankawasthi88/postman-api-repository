@@ -1,0 +1,26 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Automated API tests using Postman CLI
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install Postman CLI
+        run: |
+          curl https://dl-cli.pstmn-stage.io/download/latest/linux/ -o postman-cli.tar.gz
+          tar -zxvf postman-cli.tar.gz
+          sudo mv postman-cli /usr/bin/postman
+          rm postman-cli.tar.gz
+      # Runs a single command using the runners shell
+      - name: Login to Postman CLI
+        run: postman login --with-api-key PMAK-632035a39239ad00350b1ca2-1e3d9a90b1d4d0a67de5959f0bec614a92
+      - name: Run API tests
+        run: |
+          export POSTMAN_API_BASE_URL='https://api.getpostman-stage.com'
+          postman collection run "${GITHUB_ACTION_PATH}/postman/collections/Postman API reference.json" --integration-id "127248-${GITHUB_JOB}"
+          # Run your API using Postman CLI
+          postman api lint --integration-id=127248
