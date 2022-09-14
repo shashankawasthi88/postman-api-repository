@@ -1,14 +1,41 @@
-id = 80340a7f-e142-4dd1-b46a-2551b4a05e3d
+id = c73e5e5c-e4f8-4f85-ae92-67a8dc2c3f95
 
 [relations]
 
 [relations.collections]
 rootDirectory = postman/collections
+files[] = {"id":"473ace82-d578-4e2f-be34-ad1745b43489","path":"Postman API reference Copy.json","metaData":{}}
+files[] = {"id":"be72e0c4-2fd9-4704-9275-a49b7ccec213","path":"Postman API reference.json","metaData":{}}
 
 [relations.collections.metaData]
 
 [relations.apiDefinition]
 rootDirectory = postman/schemas
+files[] = {"path":"index.yaml","metaData":{}}
+files[] = {"path":"src/openapi Copy.yaml","metaData":{}}
+files[] = {"path":"src/openapi.yaml","metaData":{}}
+files[] = {"path":"src/parameters/_index Copy.yaml","metaData":{}}
+files[] = {"path":"src/parameters/_index.yaml","metaData":{}}
+files[] = {"path":"src/parameters/path/petId Copy.yaml","metaData":{}}
+files[] = {"path":"src/parameters/path/petId.yaml","metaData":{}}
+files[] = {"path":"src/parameters/query/limit Copy.yaml","metaData":{}}
+files[] = {"path":"src/parameters/query/limit.yaml","metaData":{}}
+files[] = {"path":"src/resources/pet Copy.yaml","metaData":{}}
+files[] = {"path":"src/resources/pet.yaml","metaData":{}}
+files[] = {"path":"src/resources/pets Copy.yaml","metaData":{}}
+files[] = {"path":"src/resources/pets.yaml","metaData":{}}
+files[] = {"path":"src/responses/_index Copy.yaml","metaData":{}}
+files[] = {"path":"src/responses/_index.yaml","metaData":{}}
+files[] = {"path":"src/responses/NullResponse Copy.yaml","metaData":{}}
+files[] = {"path":"src/responses/NullResponse.yaml","metaData":{}}
+files[] = {"path":"src/responses/UnexpectedError Copy.yaml","metaData":{}}
+files[] = {"path":"src/responses/UnexpectedError.yaml","metaData":{}}
+files[] = {"path":"src/schemas/_index Copy.yaml","metaData":{}}
+files[] = {"path":"src/schemas/_index.yaml","metaData":{}}
+files[] = {"path":"src/schemas/Error Copy.yaml","metaData":{}}
+files[] = {"path":"src/schemas/Error.yaml","metaData":{}}
+files[] = {"path":"src/schemas/Pet Copy.yaml","metaData":{}}
+files[] = {"path":"src/schemas/Pet.yaml","metaData":{}}
 
 [relations.apiDefinition.metaData]
 type = openapi:3
