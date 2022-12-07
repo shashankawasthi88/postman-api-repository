@@ -13,3 +13,5 @@ files[] = {"id":"536514-3a1c94ae-efa1-4019-86ce-8c72c66fef34","path":"C1.json","
 rootDirectory = postman/schemas
 
 [relations.apiDefinition.metaData]
+type = openapi:3
+rootFiles[] = index.yaml
